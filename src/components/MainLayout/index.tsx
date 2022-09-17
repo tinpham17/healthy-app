@@ -3,9 +3,9 @@ import { MainHeader } from "components/MainHeader"
 import { ReactNode } from "react"
 import styled from "styled-components"
 
-const Wrapper = styled.div`
+const Wrapper = styled.div``
 
-`
+const MainBody = styled.div``
 
 interface MainLayoutProps {
   children: ReactNode
@@ -16,7 +16,9 @@ export const MainLayout: React.FC<MainLayoutProps> = (props) => {
   return (
     <Wrapper>
       <MainHeader/>
-      { children }
+      <MainBody>
+        { children }
+      </MainBody>
       <MainFooter/>
     </Wrapper>
   )

@@ -65,8 +65,8 @@ export const MainHeader: React.FC = () => {
         <LogoSvg/>
         <Box>
           <Navbar>
-            {MainLinks.map((link) =>
-              <li>
+            {MainLinks.map((link, index) =>
+              <li key={index}>
                 <Link to={link.url}>
                   {<link.icon/>}
                   <span>{link.label}</span>
