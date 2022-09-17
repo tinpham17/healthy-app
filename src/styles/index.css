@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Hiragino Kaku Gothic Pro';
+  src: url("assets/fonts/hiragino-kaku-gothic-pro-w3.otf");
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

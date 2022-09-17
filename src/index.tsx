@@ -6,14 +6,15 @@ import { TopPage } from "pages/TopPage"
 import { MyRecordPage } from "pages/MyRecordPage"
 import { ColumnPage } from "pages/ColumnPage"
 import reportWebVitals from "./reportWebVitals"
+import "styles/index.css"
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path={RoutePath.COLUMN_PAGE} element={<ColumnPage/>}/>
         <Route path={RoutePath.TOP_PAGE} element={<TopPage/>}/>
         <Route path={RoutePath.MY_RECORD_PAGE} element={<MyRecordPage/>}/>
-        <Route path={RoutePath.COLUMN_PAGE} element={<ColumnPage/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
