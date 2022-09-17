@@ -3,6 +3,8 @@ import { BodyFatGraph } from "components/BodyFatGraph"
 import { MainLayout } from "components/MainLayout"
 import { MealHistory } from "components/MealHistory"
 import { MealNavbar } from "components/MealNavbar"
+import { useMealHistory } from "functions/useMealHistory"
+import { useEffect } from "react"
 import styled from "styled-components"
 
 const Box = styled.div`
@@ -11,6 +13,12 @@ const Box = styled.div`
 `
 
 export const TopPage: React.FC = () => {
+  const { data, fetch } = useMealHistory()
+
+  useEffect(() => {
+    fetch()
+  }, [fetch])
+
   return (
     <MainLayout>
       <Box>
@@ -18,7 +26,7 @@ export const TopPage: React.FC = () => {
         <BodyFatGraph/>
       </Box>
       <MealNavbar/>
-      <MealHistory/>
+      <MealHistory data={data}/>
     </MainLayout>
   )
 }

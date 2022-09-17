@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "date": "05.21",
+    "image": "/images/m01.jpg",
+    "type": "morning"
+  },
+  {
+    "id": "2",
+    "date": "05.21",
+    "image": "/images/l03.jpg",
+    "type": "lunch"
+  },
+  {
+    "id": "3",
+    "date": "05.21",
+    "image": "/images/d01.jpg",
+    "type": "dinner"
+  },
+  {
+    "id": "4",
+    "date": "05.21",
+    "image": "/images/l01.jpg",
+    "type": "snack"
+  },
+  {
+    "id": "5",
+    "date": "05.20",
+    "image": "/images/m01.jpg",
+    "type": "morning"
+  },
+  {
+    "id": "6",
+    "date": "05.20",
+    "image": "/images/l02.jpg",
+    "type": "lunch"
+  },
+  {
+    "id": "7",
+    "date": "05.20",
+    "image": "/images/d02.jpg",
+    "type": "dinner"
+  },
+  {
+    "id": "8",
+    "date": "05.20",
+    "image": "/images/s01.jpg",
+    "type": "snack"
+  }
+]

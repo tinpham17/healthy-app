@@ -11,7 +11,7 @@ const Container = styled.div`
 
   ul {
     display: flex;
-    padding: 24px 0;
+    padding: 36px 0;
   }
   li {
     width: 134px;
