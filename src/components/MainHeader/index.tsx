@@ -2,6 +2,7 @@ import { ReactComponent as LogoSvg } from "assets/images/logo.svg"
 import { ReactComponent as MenuSvg } from "assets/images/icon-menu.svg"
 import { MainLinks } from "constants/MainLinks"
 import { Link } from "react-router-dom"
+import { RoutePath } from "constants/RoutePath"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -62,7 +63,9 @@ export const MainHeader: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        <LogoSvg/>
+        <Link to={RoutePath.TOP_PAGE}>
+          <LogoSvg/>
+        </Link>
         <Box>
           <Navbar>
             {MainLinks.map((link, index) =>

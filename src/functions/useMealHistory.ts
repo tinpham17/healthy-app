@@ -7,7 +7,6 @@ export const useMealHistory = () => {
 
   const fetch = async () => {
     const result = await client.get<Meal[]>("/meal-history.json")
-    console.log(result)
     setData(result.data)
   }
 

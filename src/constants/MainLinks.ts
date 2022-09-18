@@ -1,6 +1,7 @@
 import { ReactComponent as MemoSvg } from "assets/images/icon-memo.svg"
 import { ReactComponent as ChallengeSvg } from "assets/images/icon-challenge.svg"
 import { ReactComponent as InfoSvg } from "assets/images/icon-info.svg"
+import { RoutePath } from "./RoutePath"
 
 interface Link {
   label: string
@@ -11,7 +12,7 @@ interface Link {
 export const MainLinks: Link[] = [
   {
     label: "自分の記録",
-    url: "",
+    url: RoutePath.MY_RECORD_PAGE,
     icon: MemoSvg
   },
   {
@@ -21,7 +22,7 @@ export const MainLinks: Link[] = [
   },
   {
     label: "お知らせ",
-    url: "",
+    url: RoutePath.COLUMN_PAGE,
     icon: InfoSvg
   },
 ]
