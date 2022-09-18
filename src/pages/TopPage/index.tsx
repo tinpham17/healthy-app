@@ -34,7 +34,10 @@ export const TopPage: React.FC = () => {
   return (
     <MainLayout>
       <Box>
-        <AchievementRate/>
+        <AchievementRate
+          date="05/21"
+          percentage={75}
+        />
         <Graph>
           <BodyFatGraph data={bodyFatData}/>
         </Graph>

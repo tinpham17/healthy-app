@@ -88,7 +88,7 @@ export const ColumnListing: React.FC<ColumnListingProps> = (props) => {
               <ItemName>{item.name}</ItemName>
               <ItemTags>
                 {item.tags.map((tag) =>
-                  <span>{tag}</span>
+                  <span key={tag}>{tag}</span>
                 )}
               </ItemTags>
             </Item>

@@ -81,7 +81,7 @@ export const DiaryRecord: React.FC<DiaryRecordProps> = (props) => {
         </Heading>
         <Grid>
           {data.map((item) =>
-            <Item>
+            <Item key={item.id}>
               <ItemDate>{item.date}</ItemDate>
               <ItemTime>{item.time}</ItemTime>
               <ItemContent dangerouslySetInnerHTML={{ __html: item.content }}/>

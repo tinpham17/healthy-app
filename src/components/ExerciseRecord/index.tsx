@@ -111,7 +111,7 @@ export const ExerciseRecord: React.FC<ExerciseRecordProps> = (props) => {
         <Scroll>
           <Grid>
             {data.map((item) =>
-              <Item>
+              <Item key={item.id}>
                 <Box>
                   <ItemName>{item.name}</ItemName>
                   <ItemTime>{item.minutes} min</ItemTime>

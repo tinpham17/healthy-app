@@ -77,8 +77,8 @@ export const RecordNavbar: React.FC = () => {
     <Container>
       <Wrapper>
         <ul>
-          {links.map((link) =>
-            <li>
+          {links.map((link, index) =>
+            <li key={index}>
               <Link
                 to={link.to}
                 style={{

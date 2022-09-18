@@ -7,6 +7,7 @@ import { MyRecordPage } from "pages/MyRecordPage"
 import { ColumnPage } from "pages/ColumnPage"
 import reportWebVitals from "./reportWebVitals"
 import "styles/index.css"
+import "react-circular-progressbar/dist/styles.css"
 
 ReactDOM.render(
   <React.StrictMode>

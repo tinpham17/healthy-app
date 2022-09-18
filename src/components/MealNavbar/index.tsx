@@ -66,8 +66,8 @@ export const MealNavbar: React.FC = () => {
   return (
     <Container>
       <ul>
-        {links.map((link) =>
-          <li>
+        {links.map((link, index) =>
+          <li key={index}>
             <Link to={link.to}>
               {<link.icon/>}
               {link.label}

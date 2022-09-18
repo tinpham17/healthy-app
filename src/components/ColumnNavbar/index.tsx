@@ -75,8 +75,8 @@ export const ColumnNavbar: React.FC = () => {
     <Container>
       <Wrapper>
         <Grid>
-          {links.map((link) =>
-            <Item>
+          {links.map((link, index) =>
+            <Item key={index}>
               <Link to={link.to}>
                 <Title>{link.title}</Title>
                 <Separator/>
