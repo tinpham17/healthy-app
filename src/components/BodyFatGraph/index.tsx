@@ -9,14 +9,8 @@ import {
 import styled from "styled-components"
 
 const Container = styled.div`
-  width: 100%;
-  height: 316px;
-  background: #2E2E2E;
-  padding: 8px 24px;
-  box-sizing: border-box;
-
   .container {
-    background: #2E2E2E;
+    background: transparent;
   }
   .label {
     color: #fff;
@@ -49,7 +43,17 @@ export const BodyFatGraph: React.FC<BodyFatGraphProps> = (props) => {
           <CartesianGrid
             horizontal={false}
           />
-          <XAxis dataKey="name" className="label"/>
+          <XAxis
+            dataKey="name"
+            className="label"
+            tick={{
+              fontSize: 10
+            }}
+            tickSize={0}
+            axisLine={false}
+            stroke="#fff"
+            tickMargin={8}
+          />
           <Tooltip />
           <Line
             dataKey="v1"

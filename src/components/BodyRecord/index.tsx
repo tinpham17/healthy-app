@@ -36,6 +36,34 @@ const Date = styled.div`
   color: #FFFFFF;
 `
 
+const Box = styled.div`
+  display: flex-wrap;
+  padding: 0 32px;
+`
+
+const Toggle = styled.button<{active?: boolean}>`
+  background: ${props => props.active ? "#FFCC21" : "#FFFFFF"};
+  border-radius: 11px;
+  height: 24px;
+  border: none;
+  min-width: 56px;
+  margin-right: 16px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.075px;
+  color: ${props => props.active ? "#fff" : "#FFCC21"};
+  &:last-of-type {
+    margin-right: 0;
+  }
+`
+
+const Graph = styled.div`
+  box-sizing: border-box;
+  padding: 0 32px;
+`
+
 interface BodyRecordProps {
   children: ReactNode
 }
@@ -49,7 +77,15 @@ export const BodyRecord: React.FC<BodyRecordProps> = (props) => {
           <Title>Body Record</Title>
           <Date>2021.05.21</Date>
         </Heading>
-        {children}
+        <Graph>
+          {children}
+        </Graph>
+        <Box>
+          <Toggle>日</Toggle>
+          <Toggle>週</Toggle>
+          <Toggle>月</Toggle>
+          <Toggle active>年</Toggle>
+        </Box>
       </Wrapper>
     </Container>
   )

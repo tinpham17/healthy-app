@@ -13,6 +13,14 @@ const Box = styled.div`
   align-items: center;
 `
 
+const Graph = styled.div`
+  width: 100%;
+  height: 316px;
+  background: #2E2E2E;
+  padding: 8px 24px;
+  box-sizing: border-box;
+`
+
 export const TopPage: React.FC = () => {
   const { data: mealHistoryData, fetch: fetchMealHistoryData } = useMealHistory()
   const { data: bodyFatData, fetch: fetchBodyFatData } = useBodyFat()
@@ -27,7 +35,9 @@ export const TopPage: React.FC = () => {
     <MainLayout>
       <Box>
         <AchievementRate/>
-        <BodyFatGraph data={bodyFatData}/>
+        <Graph>
+          <BodyFatGraph data={bodyFatData}/>
+        </Graph>
       </Box>
       <MealNavbar/>
       <MealHistory data={mealHistoryData}/>
