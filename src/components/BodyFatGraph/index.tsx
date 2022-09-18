@@ -9,15 +9,18 @@ import {
 import styled from "styled-components"
 
 const Container = styled.div`
-  .container {
-    background: #2E2E2E;
-  }
-
   width: 100%;
   height: 316px;
   background: #2E2E2E;
   padding: 8px 24px;
   box-sizing: border-box;
+
+  .container {
+    background: #2E2E2E;
+  }
+  .label {
+    color: #fff;
+  }
 `
 
 interface BodyFatGraphProps {
@@ -46,17 +49,17 @@ export const BodyFatGraph: React.FC<BodyFatGraphProps> = (props) => {
           <CartesianGrid
             horizontal={false}
           />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="name" className="label"/>
           <Tooltip />
           <Line
             dataKey="v1"
             stroke="#FFCC21"
-            strokeWidth={2}
+            strokeWidth={3}
           />
           <Line
             dataKey="v2"
             stroke="#8FE9D0"
-            strokeWidth={2}
+            strokeWidth={3}
           />
         </LineChart>
       </ResponsiveContainer>

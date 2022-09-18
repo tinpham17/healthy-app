@@ -1,4 +1,5 @@
 import { BodyFatGraph } from "components/BodyFatGraph"
+import { BodyRecord } from "components/BodyRecord"
 import { DiaryRecord } from "components/DiaryRecord"
 import { ExerciseRecord } from "components/ExerciseRecord"
 import { MainLayout } from "components/MainLayout"
@@ -23,7 +24,9 @@ export const MyRecordPage: React.FC = () => {
   return (
     <MainLayout>
       <RecordNavbar/>
-      <BodyFatGraph data={bodyFatData}/>
+      <BodyRecord>
+        <BodyFatGraph data={bodyFatData}/>
+      </BodyRecord>
       <ExerciseRecord data={myExerciseData}/>
       <DiaryRecord data={myDiaryData}/>
     </MainLayout>
