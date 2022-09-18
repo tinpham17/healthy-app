@@ -17,7 +17,8 @@ export const TopPage: React.FC = () => {
 
   useEffect(() => {
     fetch()
-  }, [fetch])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <MainLayout>

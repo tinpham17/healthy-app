@@ -15,6 +15,7 @@ ReactDOM.render(
         <Route path={RoutePath.COLUMN_PAGE} element={<ColumnPage/>}/>
         <Route path={RoutePath.TOP_PAGE} element={<TopPage/>}/>
         <Route path={RoutePath.MY_RECORD_PAGE} element={<MyRecordPage/>}/>
+        <Route path={RoutePath.CHALLENGE_PAGE} element={<TopPage/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

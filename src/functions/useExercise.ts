@@ -6,7 +6,7 @@ export const useExercise = () => {
   const [data, setData] = useState<Exercise[]>([])
 
   const fetch = async () => {
-    const result = await client.get<Exercise[]>("/exercise.json")
+    const result = await client.get<Exercise[]>("/my-exercise.json")
     setData(result.data)
   }
 

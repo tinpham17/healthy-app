@@ -17,7 +17,7 @@ export const MainLinks: Link[] = [
   },
   {
     label: "チャレンジ",
-    url: "",
+    url: RoutePath.CHALLENGE_PAGE,
     icon: ChallengeSvg
   },
   {

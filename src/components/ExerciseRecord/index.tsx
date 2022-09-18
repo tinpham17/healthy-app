@@ -70,10 +70,6 @@ const Item = styled.li`
   }
 `
 
-const Disc = styled.div`
-  font-size: 6px;
-`
-
 const ItemName = styled.div`
   font-weight: 300;
   font-size: 15px;

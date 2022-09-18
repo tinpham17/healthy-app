@@ -1,6 +1,7 @@
 import { displayMealType } from "functions/utils"
 import { Meal } from "types/meal"
 import styled from "styled-components"
+import { ActionButton } from "components/ActionButton"
 
 const Container = styled.div``
 
@@ -34,20 +35,6 @@ const Info = styled.div`
   min-width: 120px;
 `
 
-const ViewMore = styled.button`
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 64px;
-  background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
-  border: none;
-  height: 56px;
-  border-radius: 4px;
-  min-width: 296px;
-`
-
 interface MealHistoryProps {
   data: Meal[]
 }
@@ -67,7 +54,7 @@ export const MealHistory: React.FC<MealHistoryProps> = (props) => {
             </Item>
           )}
         </Grid>
-        <ViewMore>記録をもっと見る</ViewMore>
+        <ActionButton>記録をもっと見る</ActionButton>
       </Wrapper>
     </Container>
   )
